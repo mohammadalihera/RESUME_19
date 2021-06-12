@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+:root {
+  --themecolor: #46919a;
+  --hovercolor: rgb(145, 142, 142);
+  --bgcolor: #343338;
+  --textcolor: rgb(184, 182, 182);
+  --bordercolor: #d2d0d3;
+  --pagebackground: linear-gradient(to right, rgb(0, 0, 0) , rgb(14, 14, 13));
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+
+/*  background: linear-gradient(to top right, magenta 0%, hotpink 100%);*/
+/* background-color: rgba(229,230,232,0.6);*/
+  /*box-shadow: 5px 5px 100px 5px rgba(255,255,255,.8);*/
+  color: rgb(20, 20, 20);
+  background: var(--pagebackground);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.bodyContainer{
+
+    width: 8.5in;
+    height: 12in;
+
+    border-radius: 5px;
+    /* background:  var(--bgcolor); */
+    box-shadow: 13px 13px 20px #363636,
+                13px 13px -20px #3b3a3a;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;   
+}
+
+.leftBottomBorder{
+    height: 1px;
+    width: 220px;
+    margin-left: 22px;
+    margin-right: 22px;
+    background-color: var(--bordercolor);
+}
+.bodyContainer p {
+    font-size: 12px;
+}
+a{
+    font-size: 12px;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-underline-offset: 1px;
+    text-decoration: underline;
+}
+.leftContainer{
+    height: 12in;
+
+    
+    float: left;
+    width: 3in;
+    background-color: var(--bgcolor);
+    padding: 10px;
+
+}
+
+
+
+.image{
+    height: 2in;
+    width: 2.7in;
+    margin: 10px auto;
+    padding: 40px; 
+}
+.image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.about{
+    /* height: 3.18in;
+    width: 2.8in; */
+    margin: 10px auto;
+    color: var(--textcolor);
+}
+.about-detail{
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.ab-title{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+ h2{
+    font-weight: bolder;
+    
+}
+.followMe{
+    height: 2.2in;
+    width: 2.8in;
+    margin: 10px auto;
+    padding: 20px ;
+    color: var(--textcolor);
+}
+.rightContainer a{
+    color: rgb(66, 64, 64);
+}
+.reference{
+    height: 2.2in;
+    width: 2.8in;
+    margin: 10px auto;
+    padding: 20px ;
+    color: var(--textcolor);
+}
+.language{
+    height: 1.2in;
+    width: 2.8in;
+    margin: 10px auto;
+    padding: 20px ;
+    color: var(--textcolor);    
+}
+.lan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.leftLan{
+    flex: 48%;
+    display: flex;
+    flex-direction: row;
+}
+.rightLan{
+    flex: 48%;
+    display: flex;
+    flex-direction: row;
+}
+.lanCircle{
+    height: 6px;
+    width: 6px;
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    padding: 7px;
+    background-color:var(--textcolor);
+    border-radius: 50%;
+}
+.leftContainer a{
+    color: var(--textcolor);
+}
+.space{
+    /* padding: .7rem; */
+    margin-bottom: 1rem;
+}
+p{
+    font-size: 15px;
+    word-spacing: 5px;
+}
+
+/*right container starts here*/
+
+.rightContainer{
+    float: left;
+    width: 5.5in;
+    height: 12in;
+    background-color: whitesmoke;
+    padding: 10px;
+
+}
+.contactSegment{
+    display: flex;
+    height: 2in;
+    width: 5in;
+    padding-top: 40px;
+    margin: 10px auto;
+    border-bottom: 1px solid var(--bordercolor);
+    
+}
+.leftcontact{
+    flex:50%;
+    
+    
+}
+.rightcontact{
+    flex: 50%;  
+} 
+
+.contactSegment a:hover{
+    text-underline-offset: 1px;
+    color: var(--textcolor);
+}
+
+/* work experience starts */
+.workExperience{
+    height: 3.3in;
+    width: 5in;
+    margin: 10px auto;
+    padding-top: 20px ;
+    border-bottom:1px solid var(--bordercolor);
+}
+
+/* work exp 1 starts here */
+.workExp1{
+    display: flex;
+}
+.workExp1 .leftSide{
+    flex: 30%;
+}
+.workExp1 .rightSide{
+    display: flex;
+    flex: 65%;
+}
+
+.workExp1 .workGraphics{
+    flex: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.workExp1 .circle{
+    height: 11px;
+    width: 11px;
+    background-color:var(--bordercolor);
+    border-radius: 50%;
+    
+}    
+.workExp1 .workLine{
+    /* this will go directly under workLine of workexp1 */
+    height:68px;
+    width:1px;
+    margin-left: 5px;
+    background-color: var(--bordercolor);
+    
+}
+.workExp1 .workDesc{
+    flex: 92%;
+}
+
+/* work wxp 2 starts here */
+
+.workExp2{
+    display: flex;
+}
+.workExp2 .leftSide{
+    flex: 30%;
+}
+.workExp2 .rightSide{
+    flex: 65%;
+    display: flex;
+
+}
+.workExp2 .workGraphics{
+    flex: 5% ;
+}
+.workExp2 .workDesc{
+    flex: 92%;
+    
+}
+
+.workExp2 .circle{
+    height: 11px;
+    width: 11px;
+    
+    background-color:var(--bordercolor);
+    border-radius: 50%;
+    align-content: space-between;
+    
+}
+
+.workExp2 .workLine{
+    /* this will go directly under workLine of workexp1 */
+    height:68px;
+    width:1px;
+    margin-left: 5px;
+    background-color: var(--bordercolor);
+}
+
+/* work exp 3 starts here */
+
+.workExp3{
+    display: flex;
+}
+.workExp3 .leftSide{
+    flex: 30%;
+}
+.workExp3 .rightSide{
+    flex: 65%;
+    display: flex;
+}
+
+.workExp3 .workGraphics{
+    flex: 5% ;
+}
+.workExp3 .workDesc{
+    flex: 92%;
+    
+}
+
+.workExp3 .circle{
+    height: 11px;
+    width: 11px;
+    background-color:var(--bordercolor);
+    border-radius: 50%;
+    align-content: space-between;
+    
+}
+
+.workExp3 .workLine{
+    /* this will go directly under workLine of workexp1 */
+    height:68px;
+    width:1px;
+    margin-left: 5px;
+    background-color: var(--bordercolor);
+}
+
+/* education starts here */
+
+.education{
+    height: 2.4in;
+    width: 5in;
+    margin: 10px auto;
+    padding-top: 20px ;
+    border-bottom: 1px solid var(--bordercolor);
+}
+
+.edu1{
+    display: flex;
+}
+.edu1 .leftSide{
+    flex: 30%;
+}
+.edu1 .rightSide{
+    flex: 65%;
+    display: flex;
+}
+
+.edu1 .eduGraphics{
+    flex: 5% ;
+}
+.edu1 .eduDesc{
+    flex: 92%;
+    
+}
+
+.edu1 .circle{
+    height: 11px;
+    width: 11px;
+    background-color:var(--bordercolor);
+    border-radius: 50%;
+    align-content: space-between;
+    
+}
+
+.edu1 .workLine{
+    /* this will go directly under workLine of workexp1 */
+    height:78px;
+    width:1px;
+    margin-left: 5px;
+    background-color: var(--bordercolor);
+}
+
+/* edu2 starts here */
+
+.edu2{
+    display: flex;
+}
+.edu2 .leftSide{
+    flex: 30%;
+}
+.edu2 .rightSide{
+    flex: 65%;
+    display: flex;
+}
+
+.edu2 .eduGraphics{
+    flex: 5% ;
+}
+.edu2 .eduDesc{
+    flex: 92%;
+    
+}
+
+.edu2 .circle{
+    height: 11px;
+    width: 11px;
+    background-color:var(--bordercolor);
+    border-radius: 50%;
+    align-content: space-between;
+    
+}
+
+.edu2 .workLine{
+    /* this will go directly under workLine of workexp1 */
+    height:55px;
+    width:1px;
+    margin-left: 5px;
+    background-color: var(--bordercolor);
+}
+
+/* skills starts */
+
+.skills{
+    height: 2.4in;
+    width: 5in;
+    margin: 10px auto;
+    padding-top: 20px ;
+    border-bottom: 1px solid var(--bordercolor);
+    display: flex;
+}
+.proSkills{
+    flex: 49%;
+}
+.personalSkills{
+    flex: 49%;
+}
+.skillSpace{
+    /* padding: .7rem; */
+    margin-bottom: .3rem;
+}
+.bar{
+    width: 75%;
+    height: 6px;
+    background-color: grey;
+}
+
+.barIllustrator{
+    width: 80%;
+    height: 6px;
+    background-color: rgb(82, 80, 80);
+
+}
+.barPhotoshop{
+    width: 71%;
+    height: 6px;
+    background-color: rgb(82, 80, 80);
+}
+.barCss{
+    width: 85%;
+    height: 6px;
+    background-color: rgb(82, 80, 80);
+}
+.barWordpress{
+    width: 75%;
+    height: 6px;
+    background-color: rgb(82, 80, 80);
+}
+.barCreativity{
+    width: 75%;
+    height: 6px;
+    background-color: rgb(82, 80, 80);
+}
+.barCommunication{
+    width: 75%;
+    height: 6px;
+    background-color: rgb(82, 80, 80);
+}
+.barTeamwork{
+    width: 75%;
+    height: 6px;
+    background-color: rgb(82, 80, 80);
+}
+.barLeadership{
+    width: 75%;
+    height: 6px;
+    background-color: rgb(82, 80, 80);
+}
+/* .hobbies{
+    height: 1.4in;
+    width: 5in;
+    margin: 10px auto;
+    padding: 20px ;
+} */
+.hobbies{
+    height: 1.3in;
+    padding-top: 20px ;
+}
+.hobbiesTitles{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-content: center;
+}
+.hobbiesTitles .circle{
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 7px;
+    background-color:grey;
+    border-radius: 50%;
+}
